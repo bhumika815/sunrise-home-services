@@ -29,3 +29,11 @@ form.addEventListener("submit", function(e){
 
     form.reset();
 });
+
+
+message.style.color = "green";
+message.textContent = "Request received. Choose WhatsApp or we will contact you soon.";
+
+setTimeout(() => {
+    message.textContent = "";
+}, 4000);
