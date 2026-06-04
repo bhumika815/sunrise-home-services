@@ -531,3 +531,92 @@ section h2{
     color:#64748b;
     line-height:1.7;
 }
+
+.contact-section{
+    padding:80px 0;
+}
+
+.contact-wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:stretch;
+}
+
+.contact-card,
+.contact-info{
+    height:100%;
+}
+
+.contact-card,
+.contact-info{
+    display:flex;
+    flex-direction:column;
+}
+
+.contact-card,
+.contact-info{
+    min-height:450px;
+}
+
+.contact-card{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.contact-card h2{
+    margin-bottom:20px;
+}
+
+.contact-form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding:15px;
+    border:1px solid #e2e8f0;
+    border-radius:12px;
+    font-size:16px;
+    outline:none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color:#2563eb;
+}
+
+.contact-info{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.info-box{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.06);
+}
+
+.info-box h3{
+    margin-bottom:5px;
+}
+
+.info-box p{
+    color:#64748b;
+}
+
+.info-box.highlight{
+    background:#2563eb;
+    color:white;
+}
+
+.info-box.highlight p{
+    color:white;
+    opacity:0.9;
+}
