@@ -388,34 +388,117 @@ section h2{
     border:2px solid white;
     color:white;
 }
-
 .whatsapp-float{
     position:fixed;
+    bottom:25px;
+    right:25px;
+
     width:60px;
     height:60px;
 
-    bottom:30px;
-    right:30px;
-
-    background:#25d366;
-    color:white;
+    background:#25D366;
 
     border-radius:50%;
 
     display:flex;
-    justify-content:center;
     align-items:center;
-
-    font-size:28px;
+    justify-content:center;
 
     box-shadow:0 10px 25px rgba(0,0,0,0.2);
 
-    text-decoration:none;
-
     z-index:999;
-    transition:.3s;
+
+    transition:0.3s ease;
+}
+
+.whatsapp-float img{
+    width:32px;
+    height:32px;
 }
 
 .whatsapp-float:hover{
     transform:scale(1.1);
+}
+
+@media (max-width: 768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+        padding:20px;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+    }
+
+    .hero-content h1{
+        font-size:40px;
+    }
+
+    .hero-content p{
+        font-size:16px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+    }
+
+    .about-wrapper{
+        grid-template-columns:1fr;
+    }
+
+    .about-right{
+        grid-template-columns:1fr;
+    }
+
+    .services-grid{
+        grid-template-columns:1fr;
+    }
+
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+
+    .testimonial-grid{
+        grid-template-columns:1fr;
+    }
+
+    .cta-box h2{
+        font-size:28px;
+    }
+}
+
+
+.contact{
+    padding:80px 0;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+}
+
+.contact-form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.contact-info{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
 }
