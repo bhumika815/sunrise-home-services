@@ -620,3 +620,57 @@ section h2{
     color:white;
     opacity:0.9;
 }
+
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f8fafc;
+    color:#0f172a;
+}
+
+.btn-primary,
+.btn-secondary{
+    display:inline-block;
+    transition:0.3s ease;
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+}
+
+.btn-secondary:hover{
+    transform:translateY(-3px);
+}
+
+
+.page-header{
+    padding:80px 20px;
+    text-align:center;
+    background:#0f172a;
+    color:rgb(134, 221, 228);
+}
+
+.page-header p{
+    opacity:0.8;
+}
+
+@media (max-width: 768px){
+
+    .contact-wrapper{
+        grid-template-columns:1fr;
+    }
+
+    .about-wrapper{
+        grid-template-columns:1fr;
+    }
+
+    .navbar{
+        padding:15px;
+    }
+
+}
