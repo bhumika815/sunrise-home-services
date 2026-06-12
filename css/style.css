@@ -554,10 +554,6 @@ section h2{
     flex-direction:column;
 }
 
-.contact-card,
-.contact-info{
-    min-height:450px;
-}
 
 .contact-card{
     background:white;
@@ -663,6 +659,19 @@ body{
 
     .contact-wrapper{
         grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .contact-card{
+        padding:20px;
+    }
+
+    .contact-info{
+        padding:15px;
+    }
+
+    .info-box{
+        padding:12px;
     }
 
     .about-wrapper{
@@ -674,6 +683,19 @@ body{
     }
 
 }
+
+
+
+
+.contact-form input,
+.contact-form textarea{
+    padding:10px;
+    font-size:14px;
+} 
+
+
+
+
 
 .container{
     width:90%;
