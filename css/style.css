@@ -411,6 +411,34 @@ section h2{
     transition:0.3s ease;
 }
 
+.call-float{
+    position:fixed;
+
+    bottom:100px;      /* above whatsapp */
+    right:25px;
+
+    background:#2563eb;
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px 18px;
+    border-radius:30px;
+
+    font-size:14px;
+    font-weight:600;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+
+    z-index:999;
+
+    transition:0.3s ease;
+}
+
+.call-float:hover{
+    transform:scale(1.05);
+}
+
 .whatsapp-float img{
     width:32px;
     height:32px;
