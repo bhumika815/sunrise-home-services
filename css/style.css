@@ -313,19 +313,35 @@ section h2{
     margin-bottom:50px;
     font-size:18px;
 }
+.testimonial-row{
+    display:flex;
+    justify-content:center;
+    align-items:stretch;
+
+    gap:25px;
+    margin-top:40px;
+
+    flex-wrap:wrap;
+}
 
 .testimonial-card{
     background:white;
+    padding:30px;
 
-    padding:35px;
+    width:320px;          /* fixed equal width */
+    min-height:220px;    /* same height */
 
     border-radius:20px;
 
     box-shadow:0 10px 30px rgba(0,0,0,0.08);
 
-    transition:.3s;
-
     text-align:left;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+    transition:0.3s ease;
 }
 
 .testimonial-card:hover{
@@ -758,4 +774,33 @@ html{
 
 button, a{
     cursor:pointer;
+}
+
+
+
+.purchase-float{
+    position:fixed;
+    bottom:25px;
+    left:25px;
+
+    background:#7c3aed;   /* purple */
+
+    color:white;
+    text-decoration:none;
+
+    padding:14px 18px;
+    border-radius:30px;
+
+    font-size:14px;
+    font-weight:600;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+
+    z-index:999;
+
+    transition:0.3s ease;
+}
+
+.purchase-float:hover{
+    transform:scale(1.05);
 }
