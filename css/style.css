@@ -315,20 +315,20 @@ section h2{
 }
 .testimonial-row{
     display:flex;
-    justify-content:center;
-    align-items:stretch;
-
     gap:25px;
-    margin-top:40px;
 
-    flex-wrap:wrap;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+
+    padding:10px 5px;
 }
 
 .testimonial-card{
     background:white;
     padding:30px;
 
-    width:320px;          /* fixed equal width */
+    width:320px; 
+    flex-shrink:0;         /* fixed equal width */
     min-height:220px;    /* same height */
 
     border-radius:20px;
